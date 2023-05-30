@@ -9,6 +9,11 @@ import Foundation
 import UIKit
 import RxSwift
 
+protocol MoveBack{
+
+}
+
+
 class BaseViewController<T: BaseView, P: BaseView>: UIViewController{
     
     let headerView: T
@@ -30,13 +35,27 @@ class BaseViewController<T: BaseView, P: BaseView>: UIViewController{
         super.viewDidLoad()
         template()
         style()
-        layout()
         initialize()
         bind()
     }
     
     final private func template(){
         setViewControllerStyle()
+        layout()
+        setHeaderViewTarget()
+    }
+    
+    final private func layout() {
+        view.addSubview(headerView)
+        view.addSubview(mainView)
+        headerView.snp.makeConstraints{
+            $0.top.equalTo(view.safeAreaLayoutGuide)
+            $0.leading.trailing.equalToSuperview()
+        }
+        mainView.snp.makeConstraints{
+            $0.top.equalTo(headerView.snp.bottom)
+            $0.leading.trailing.bottom.equalToSuperview()
+        }
     }
     
     private func setViewControllerStyle(){
@@ -46,8 +65,16 @@ class BaseViewController<T: BaseView, P: BaseView>: UIViewController{
         tabBarController?.tabBar.isHidden = true
     }
     
+    private func setHeaderViewTarget() {
+        guard let headerView = headerView as? MoveBack else { return }
+        //TODO: HeaderView 백 버튼 addTarget 하기
+    }
+    
     func style() { }
-    func layout() { }
     func initialize() { }
     func bind() { }
+    
+    func popViewController(){
+        navigationController?.popViewController(animated: true)
+    }
 }
