@@ -8,13 +8,9 @@
 import Foundation
 import UIKit
 import RxSwift
+import HeyTicketKit
 
-protocol MoveBack{
-
-}
-
-
-class BaseViewController<T: BaseView, P: BaseView>: UIViewController{
+class BaseViewController<T: BaseHeaderView, P: BaseView>: UIViewController{
     
     let headerView: T
     let mainView: P
@@ -66,15 +62,15 @@ class BaseViewController<T: BaseView, P: BaseView>: UIViewController{
     }
     
     private func setHeaderViewTarget() {
-        guard let headerView = headerView as? MoveBack else { return }
-        //TODO: HeaderView 백 버튼 addTarget 하기
+        guard let headerView = headerView as? NavigationHeaderView else { return }
+        headerView.backBtn.addTarget(self, action: #selector(popViewController), for: .touchUpInside)
     }
     
     func style() { }
     func initialize() { }
     func bind() { }
     
-    func popViewController(){
+    @objc func popViewController(){
         navigationController?.popViewController(animated: true)
     }
 }
