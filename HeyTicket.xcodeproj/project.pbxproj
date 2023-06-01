@@ -10,7 +10,6 @@
 		EE47A8AD2A24C2D000FAAC06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE47A8AC2A24C2D000FAAC06 /* AppDelegate.swift */; };
 		EE47A8AF2A24C2D000FAAC06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE47A8AE2A24C2D000FAAC06 /* SceneDelegate.swift */; };
 		EE47A8B42A24C2D000FAAC06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE47A8B22A24C2D000FAAC06 /* Main.storyboard */; };
-		EE47A8B62A24C2D100FAAC06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE47A8B52A24C2D100FAAC06 /* Assets.xcassets */; };
 		EE47A8B92A24C2D100FAAC06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE47A8B72A24C2D100FAAC06 /* LaunchScreen.storyboard */; };
 		EE6AB9102A262E4F00F18596 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AB90F2A262E4F00F18596 /* BaseViewController.swift */; };
 		EE6AB9142A262E8100F18596 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AB9132A262E8100F18596 /* BaseTableViewCell.swift */; };
@@ -25,14 +24,15 @@
 		EE7A96F62A25D32E003E362F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE7A96F52A25D32E003E362F /* SnapKit */; };
 		EE7A96F92A25D3B9003E362F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EE7A96F82A25D3B9003E362F /* RxCocoa */; };
 		EE7A96FB2A25D3B9003E362F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EE7A96FA2A25D3B9003E362F /* RxSwift */; };
-		EEC182182A25FDC4009A56D7 /* HeyTicketKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7A97502A25F4BB003E362F /* HeyTicketKit.framework */; };
-		EEC182192A25FDC4009A56D7 /* HeyTicketKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE7A97502A25F4BB003E362F /* HeyTicketKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EE950C222A27229E005EC418 /* HeyTicketKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6AB9522A27224E00F18596 /* HeyTicketKit.framework */; };
+		EE950C232A27229E005EC418 /* HeyTicketKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE6AB9522A27224E00F18596 /* HeyTicketKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EE950C262A27232F005EC418 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE950C252A27232F005EC418 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EE7A974F2A25F4BB003E362F /* PBXContainerItemProxy */ = {
+		EE6AB9512A27224E00F18596 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EE7A974B2A25F4BB003E362F /* HeyTicketKit.xcodeproj */;
+			containerPortal = EE6AB94D2A27224E00F18596 /* HeyTicketKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE7A96EA2A25D01E003E362F;
 			remoteInfo = HeyTicketKit;
@@ -40,13 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EEC1821A2A25FDC4009A56D7 /* Embed Frameworks */ = {
+		EE950C242A27229E005EC418 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EEC182192A25FDC4009A56D7 /* HeyTicketKit.framework in Embed Frameworks */,
+				EE950C232A27229E005EC418 /* HeyTicketKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +58,6 @@
 		EE47A8AC2A24C2D000FAAC06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE47A8AE2A24C2D000FAAC06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE47A8B32A24C2D000FAAC06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EE47A8B52A24C2D100FAAC06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE47A8B82A24C2D100FAAC06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE47A8BA2A24C2D100FAAC06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE6AB90F2A262E4F00F18596 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -71,8 +70,9 @@
 		EE6AB91F2A262ECA00F18596 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		EE6AB9212A262ECF00F18596 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EE6AB9252A26317700F18596 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		EE6AB94D2A27224E00F18596 /* HeyTicketKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HeyTicketKit.xcodeproj; path = ../../HeyTicketKit/HeyTicketKit.xcodeproj; sourceTree = "<group>"; };
 		EE7A97052A25DDD1003E362F /* HeyTicketConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = HeyTicketConfig.xcconfig; sourceTree = "<group>"; };
-		EE7A974B2A25F4BB003E362F /* HeyTicketKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HeyTicketKit.xcodeproj; path = ../HeyTicketKit/HeyTicketKit.xcodeproj; sourceTree = "<group>"; };
+		EE950C252A27232F005EC418 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEC182182A25FDC4009A56D7 /* HeyTicketKit.framework in Frameworks */,
+				EE950C222A27229E005EC418 /* HeyTicketKit.framework in Frameworks */,
 				EE7A96FB2A25D3B9003E362F /* RxSwift in Frameworks */,
 				EE7A96F92A25D3B9003E362F /* RxCocoa in Frameworks */,
 				EE7A96F62A25D32E003E362F /* SnapKit in Frameworks */,
@@ -93,7 +93,6 @@
 		EE47A8A02A24C2D000FAAC06 = {
 			isa = PBXGroup;
 			children = (
-				EE7A974B2A25F4BB003E362F /* HeyTicketKit.xcodeproj */,
 				EE47A8AB2A24C2D000FAAC06 /* HeyTicket */,
 				EE47A8AA2A24C2D000FAAC06 /* Products */,
 				EE7A97222A25E1F0003E362F /* Frameworks */,
@@ -111,6 +110,7 @@
 		EE47A8AB2A24C2D000FAAC06 /* HeyTicket */ = {
 			isa = PBXGroup;
 			children = (
+				EE6AB94D2A27224E00F18596 /* HeyTicketKit.xcodeproj */,
 				EE7A97002A25D4B8003E362F /* Application */,
 				EE6AB9022A262C7300F18596 /* Presentation */,
 				EE6AB9082A262CBA00F18596 /* Domain */,
@@ -158,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				EE6AB9052A262C8800F18596 /* Utils */,
+				EE950C252A27232F005EC418 /* TestViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -215,12 +216,19 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		EE6AB94E2A27224E00F18596 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE6AB9522A27224E00F18596 /* HeyTicketKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		EE7A96FE2A25D471003E362F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				EE47A8B22A24C2D000FAAC06 /* Main.storyboard */,
 				EE47A8B72A24C2D100FAAC06 /* LaunchScreen.storyboard */,
-				EE47A8B52A24C2D100FAAC06 /* Assets.xcassets */,
 				EE47A8BA2A24C2D100FAAC06 /* Info.plist */,
 				EE7A97042A25DDC4003E362F /* Config */,
 			);
@@ -251,14 +259,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EE7A974C2A25F4BB003E362F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EE7A97502A25F4BB003E362F /* HeyTicketKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,7 +269,7 @@
 				EE47A8A52A24C2D000FAAC06 /* Sources */,
 				EE47A8A62A24C2D000FAAC06 /* Frameworks */,
 				EE47A8A72A24C2D000FAAC06 /* Resources */,
-				EEC1821A2A25FDC4009A56D7 /* Embed Frameworks */,
+				EE950C242A27229E005EC418 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,8 +317,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = EE7A974C2A25F4BB003E362F /* Products */;
-					ProjectRef = EE7A974B2A25F4BB003E362F /* HeyTicketKit.xcodeproj */;
+					ProductGroup = EE6AB94E2A27224E00F18596 /* Products */;
+					ProjectRef = EE6AB94D2A27224E00F18596 /* HeyTicketKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -329,11 +329,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		EE7A97502A25F4BB003E362F /* HeyTicketKit.framework */ = {
+		EE6AB9522A27224E00F18596 /* HeyTicketKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = HeyTicketKit.framework;
-			remoteRef = EE7A974F2A25F4BB003E362F /* PBXContainerItemProxy */;
+			remoteRef = EE6AB9512A27224E00F18596 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -344,7 +344,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE47A8B92A24C2D100FAAC06 /* LaunchScreen.storyboard in Resources */,
-				EE47A8B62A24C2D100FAAC06 /* Assets.xcassets in Resources */,
 				EE47A8B42A24C2D000FAAC06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +360,7 @@
 				EE6AB91C2A262EBA00F18596 /* RepositoryInterface.swift in Sources */,
 				EE6AB91A2A262EB100F18596 /* UseCase.swift in Sources */,
 				EE6AB9222A262ECF00F18596 /* Model.swift in Sources */,
+				EE950C262A27232F005EC418 /* TestViewController.swift in Sources */,
 				EE47A8AF2A24C2D000FAAC06 /* SceneDelegate.swift in Sources */,
 				EE6AB9182A262EAC00F18596 /* Entity.swift in Sources */,
 				EE6AB9102A262E4F00F18596 /* BaseViewController.swift in Sources */,
@@ -443,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -497,7 +497,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -573,7 +573,7 @@
 				EE47A8BC2A24C2D100FAAC06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		EE47A8BD2A24C2D100FAAC06 /* Build configuration list for PBXNativeTarget "HeyTicket" */ = {
 			isa = XCConfigurationList;
@@ -582,7 +582,7 @@
 				EE47A8BF2A24C2D100FAAC06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
