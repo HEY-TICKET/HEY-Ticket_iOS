@@ -58,7 +58,15 @@ class BaseViewController<T: BaseHeaderView, P: BaseView>: UIViewController{
         view.backgroundColor = .white
         navigationController?.navigationBar.isHidden = true
 //        navigationController?.interactivePopGestureRecognizer?.delegate = self
-        tabBarController?.tabBar.isHidden = true
+        setTabBarVisibility()
+    }
+    
+    private func setTabBarVisibility(){
+        if headerView is NavigationHeaderView {
+            tabBarController?.tabBar.isHidden = true
+        } else {
+            tabBarController?.tabBar.isHidden = false
+        }
     }
     
     private func setHeaderViewTarget() {
