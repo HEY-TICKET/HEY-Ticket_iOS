@@ -24,15 +24,23 @@
 		EE7A96F62A25D32E003E362F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE7A96F52A25D32E003E362F /* SnapKit */; };
 		EE7A96F92A25D3B9003E362F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EE7A96F82A25D3B9003E362F /* RxCocoa */; };
 		EE7A96FB2A25D3B9003E362F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EE7A96FA2A25D3B9003E362F /* RxSwift */; };
-		EE950C222A27229E005EC418 /* HeyTicketKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6AB9522A27224E00F18596 /* HeyTicketKit.framework */; };
-		EE950C232A27229E005EC418 /* HeyTicketKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE6AB9522A27224E00F18596 /* HeyTicketKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EE950C262A27232F005EC418 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE950C252A27232F005EC418 /* TestViewController.swift */; };
+		EE9EC0512A28B4B000C77D16 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9EC04F2A28B4B000C77D16 /* TabBarItem.swift */; };
+		EE9EC0562A28B4C700C77D16 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9EC0532A28B4C700C77D16 /* HomeTabViewController.swift */; };
+		EE9EC0572A28B4C700C77D16 /* MyPageTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9EC0542A28B4C700C77D16 /* MyPageTabViewController.swift */; };
+		EE9EC0582A28B4C700C77D16 /* CategoryTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9EC0552A28B4C700C77D16 /* CategoryTabViewController.swift */; };
+		EE9EC05A2A28B50100C77D16 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9EC0592A28B50100C77D16 /* TabBarViewController.swift */; };
+		EEEA35242A28B72D003431B5 /* HeyTicketKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEA35232A28B726003431B5 /* HeyTicketKit.framework */; };
+		EEEA35252A28B72D003431B5 /* HeyTicketKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEEA35232A28B726003431B5 /* HeyTicketKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEEA355A2A28B99D003431B5 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEEA35562A28B99C003431B5 /* Pretendard-Medium.otf */; };
+		EEEA355B2A28B99D003431B5 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEEA35572A28B99C003431B5 /* Pretendard-Regular.otf */; };
+		EEEA355C2A28B99D003431B5 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEEA35582A28B99C003431B5 /* Pretendard-Bold.otf */; };
+		EEEA355D2A28B99D003431B5 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEEA35592A28B99D003431B5 /* Pretendard-SemiBold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EE6AB9512A27224E00F18596 /* PBXContainerItemProxy */ = {
+		EEEA35222A28B726003431B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EE6AB94D2A27224E00F18596 /* HeyTicketKit.xcodeproj */;
+			containerPortal = EEEA351E2A28B726003431B5 /* HeyTicketKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE7A96EA2A25D01E003E362F;
 			remoteInfo = HeyTicketKit;
@@ -46,7 +54,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EE950C232A27229E005EC418 /* HeyTicketKit.framework in Embed Frameworks */,
+				EEEA35252A28B72D003431B5 /* HeyTicketKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,9 +78,16 @@
 		EE6AB91F2A262ECA00F18596 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		EE6AB9212A262ECF00F18596 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EE6AB9252A26317700F18596 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		EE6AB94D2A27224E00F18596 /* HeyTicketKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HeyTicketKit.xcodeproj; path = ../../HeyTicketKit/HeyTicketKit.xcodeproj; sourceTree = "<group>"; };
-		EE7A97052A25DDD1003E362F /* HeyTicketConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = HeyTicketConfig.xcconfig; sourceTree = "<group>"; };
-		EE950C252A27232F005EC418 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		EE9EC04F2A28B4B000C77D16 /* TabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		EE9EC0532A28B4C700C77D16 /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		EE9EC0542A28B4C700C77D16 /* MyPageTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageTabViewController.swift; sourceTree = "<group>"; };
+		EE9EC0552A28B4C700C77D16 /* CategoryTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTabViewController.swift; sourceTree = "<group>"; };
+		EE9EC0592A28B50100C77D16 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		EEEA351E2A28B726003431B5 /* HeyTicketKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HeyTicketKit.xcodeproj; path = ../HeyTicketKit_iOS/HeyTicketKit.xcodeproj; sourceTree = "<group>"; };
+		EEEA35562A28B99C003431B5 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		EEEA35572A28B99C003431B5 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		EEEA35582A28B99C003431B5 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		EEEA35592A28B99D003431B5 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE950C222A27229E005EC418 /* HeyTicketKit.framework in Frameworks */,
+				EEEA35242A28B72D003431B5 /* HeyTicketKit.framework in Frameworks */,
 				EE7A96FB2A25D3B9003E362F /* RxSwift in Frameworks */,
 				EE7A96F92A25D3B9003E362F /* RxCocoa in Frameworks */,
 				EE7A96F62A25D32E003E362F /* SnapKit in Frameworks */,
@@ -93,6 +108,7 @@
 		EE47A8A02A24C2D000FAAC06 = {
 			isa = PBXGroup;
 			children = (
+				EEEA351E2A28B726003431B5 /* HeyTicketKit.xcodeproj */,
 				EE47A8AB2A24C2D000FAAC06 /* HeyTicket */,
 				EE47A8AA2A24C2D000FAAC06 /* Products */,
 				EE7A97222A25E1F0003E362F /* Frameworks */,
@@ -110,7 +126,6 @@
 		EE47A8AB2A24C2D000FAAC06 /* HeyTicket */ = {
 			isa = PBXGroup;
 			children = (
-				EE6AB94D2A27224E00F18596 /* HeyTicketKit.xcodeproj */,
 				EE7A97002A25D4B8003E362F /* Application */,
 				EE6AB9022A262C7300F18596 /* Presentation */,
 				EE6AB9082A262CBA00F18596 /* Domain */,
@@ -158,7 +173,10 @@
 			isa = PBXGroup;
 			children = (
 				EE6AB9052A262C8800F18596 /* Utils */,
-				EE950C252A27232F005EC418 /* TestViewController.swift */,
+				EE9EC04A2A28B43200C77D16 /* TabBar */,
+				EEEA35602A28BB2B003431B5 /* Home */,
+				EEEA35612A28BB32003431B5 /* Category */,
+				EEEA35622A28BB37003431B5 /* MyPage */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -216,21 +234,13 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		EE6AB94E2A27224E00F18596 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EE6AB9522A27224E00F18596 /* HeyTicketKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		EE7A96FE2A25D471003E362F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EEEA35452A28B98F003431B5 /* Font */,
 				EE47A8B22A24C2D000FAAC06 /* Main.storyboard */,
 				EE47A8B72A24C2D100FAAC06 /* LaunchScreen.storyboard */,
 				EE47A8BA2A24C2D100FAAC06 /* Info.plist */,
-				EE7A97042A25DDC4003E362F /* Config */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -244,19 +254,64 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		EE7A97042A25DDC4003E362F /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				EE7A97052A25DDD1003E362F /* HeyTicketConfig.xcconfig */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
 		EE7A97222A25E1F0003E362F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE9EC04A2A28B43200C77D16 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EE9EC04F2A28B4B000C77D16 /* TabBarItem.swift */,
+				EE9EC0592A28B50100C77D16 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		EEEA351F2A28B726003431B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA35232A28B726003431B5 /* HeyTicketKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEEA35452A28B98F003431B5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA35582A28B99C003431B5 /* Pretendard-Bold.otf */,
+				EEEA35562A28B99C003431B5 /* Pretendard-Medium.otf */,
+				EEEA35572A28B99C003431B5 /* Pretendard-Regular.otf */,
+				EEEA35592A28B99D003431B5 /* Pretendard-SemiBold.otf */,
+			);
+			name = Font;
+			path = ../../../HeyTicketKit_iOS/HeyTicketKit/Resource/Font;
+			sourceTree = "<group>";
+		};
+		EEEA35602A28BB2B003431B5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EE9EC0532A28B4C700C77D16 /* HomeTabViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EEEA35612A28BB32003431B5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EE9EC0552A28B4C700C77D16 /* CategoryTabViewController.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EEEA35622A28BB37003431B5 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				EE9EC0542A28B4C700C77D16 /* MyPageTabViewController.swift */,
+			);
+			name = MyPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,8 +372,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = EE6AB94E2A27224E00F18596 /* Products */;
-					ProjectRef = EE6AB94D2A27224E00F18596 /* HeyTicketKit.xcodeproj */;
+					ProductGroup = EEEA351F2A28B726003431B5 /* Products */;
+					ProjectRef = EEEA351E2A28B726003431B5 /* HeyTicketKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -329,11 +384,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		EE6AB9522A27224E00F18596 /* HeyTicketKit.framework */ = {
+		EEEA35232A28B726003431B5 /* HeyTicketKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = HeyTicketKit.framework;
-			remoteRef = EE6AB9512A27224E00F18596 /* PBXContainerItemProxy */;
+			remoteRef = EEEA35222A28B726003431B5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -344,7 +399,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE47A8B92A24C2D100FAAC06 /* LaunchScreen.storyboard in Resources */,
+				EEEA355C2A28B99D003431B5 /* Pretendard-Bold.otf in Resources */,
+				EEEA355B2A28B99D003431B5 /* Pretendard-Regular.otf in Resources */,
+				EEEA355D2A28B99D003431B5 /* Pretendard-SemiBold.otf in Resources */,
 				EE47A8B42A24C2D000FAAC06 /* Main.storyboard in Resources */,
+				EEEA355A2A28B99D003431B5 /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,12 +414,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9EC0572A28B4C700C77D16 /* MyPageTabViewController.swift in Sources */,
 				EE47A8AD2A24C2D000FAAC06 /* AppDelegate.swift in Sources */,
 				EE6AB9262A26317700F18596 /* BaseView.swift in Sources */,
 				EE6AB91C2A262EBA00F18596 /* RepositoryInterface.swift in Sources */,
+				EE9EC05A2A28B50100C77D16 /* TabBarViewController.swift in Sources */,
 				EE6AB91A2A262EB100F18596 /* UseCase.swift in Sources */,
+				EE9EC0562A28B4C700C77D16 /* HomeTabViewController.swift in Sources */,
+				EE9EC0512A28B4B000C77D16 /* TabBarItem.swift in Sources */,
+				EE9EC0582A28B4C700C77D16 /* CategoryTabViewController.swift in Sources */,
 				EE6AB9222A262ECF00F18596 /* Model.swift in Sources */,
-				EE950C262A27232F005EC418 /* TestViewController.swift in Sources */,
 				EE47A8AF2A24C2D000FAAC06 /* SceneDelegate.swift in Sources */,
 				EE6AB9182A262EAC00F18596 /* Entity.swift in Sources */,
 				EE6AB9102A262E4F00F18596 /* BaseViewController.swift in Sources */,
