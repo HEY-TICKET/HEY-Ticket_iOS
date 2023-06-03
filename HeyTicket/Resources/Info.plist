@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>UIAppFonts</key>
-    <array>
-        <string>Pretendard-Bold.otf</string>
-        <string>Pretendard-Medium.otf</string>
-        <string>Pretendard-Regular.otf</string>
-        <string>Pretendard-SemiBold.otf</string>
-    </array>
+	<array>
+		<string>Pretendard-Bold.otf</string>
+		<string>Pretendard-Medium.otf</string>
+		<string>Pretendard-Regular.otf</string>
+		<string>Pretendard-SemiBold.otf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -22,8 +22,6 @@
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
 				</dict>
 			</array>
 		</dict>
