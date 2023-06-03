@@ -9,15 +9,17 @@ import Foundation
 import UIKit
 import HeyTicketKit
 
-class TabBarViewController: UITabBarController{
+class TabBarController: UITabBarController{
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
+        style()
         setTabBarAppearance()
-        setTabBarItems()
     }
     
+    private func style(){
+        view.backgroundColor = .white
+    }
     
     private func setTabBarAppearance() {
         UITabBar.appearance().backgroundColor = .white
@@ -27,18 +29,4 @@ class TabBarViewController: UITabBarController{
         let fontAttributes = [NSAttributedString.Key.font: Typo.font(type: .SemiBold, size: 10)]
         UITabBarItem.appearance().setTitleTextAttributes(fontAttributes, for: .normal)
     }
-    
-    private func setTabBarItems(){
-        
-        let tabs = [UINavigationController(rootViewController: HomeTabViewController()),
-                    UINavigationController(rootViewController: CategoryTabViewController()),
-                    UINavigationController(rootViewController: MyPageTabViewController())]
-        
-        TabBarItem.allCases.forEach {
-            tabs[$0.rawValue].tabBarItem = $0.asTabBarItem()
-        }
-        
-        setViewControllers(tabs, animated: true)
-    }
-
 }
