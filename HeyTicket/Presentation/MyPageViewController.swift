@@ -1,5 +1,5 @@
 //
-//  HomeTabViewController.swift
+//  MyPageTabViewController.swift
 //  HeyTicket
 //
 //  Created by 박소윤 on 2023/06/01.
@@ -8,8 +8,10 @@
 import Foundation
 import HeyTicketKit
 
-class HomeTabViewController: BaseViewController<TabBarHeaderView, BaseView>{
- 
+class MyPageViewController: BaseViewController<TabBarHeaderView, BaseView>{
+    
+    var coordinator: MyPageCoordinator?
+    
     init() {
         super.init(
             headerView: TabBarHeaderView(leftImage: Image.search, rightImage: Image.alarm),
