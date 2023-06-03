@@ -1,5 +1,5 @@
 //
-//  MyPageTabViewController.swift
+//  CategoryTabViewController.swift
 //  HeyTicket
 //
 //  Created by 박소윤 on 2023/06/01.
@@ -8,7 +8,9 @@
 import Foundation
 import HeyTicketKit
 
-class MyPageTabViewController: BaseViewController<TabBarHeaderView, BaseView>{
+class CategoryViewController: BaseViewController<TabBarHeaderView, BaseView>{
+    
+    var coordinator: CategoryCoordinator?
     
     init() {
         super.init(

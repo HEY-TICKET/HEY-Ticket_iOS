@@ -1,5 +1,5 @@
 //
-//  CategoryTabViewController.swift
+//  HomeTabViewController.swift
 //  HeyTicket
 //
 //  Created by 박소윤 on 2023/06/01.
@@ -8,7 +8,9 @@
 import Foundation
 import HeyTicketKit
 
-class CategoryTabViewController: BaseViewController<TabBarHeaderView, BaseView>{
+class HomeViewController: BaseViewController<TabBarHeaderView, BaseView>{
+ 
+    var coordinator: HomeCoordinator?
     
     init() {
         super.init(
