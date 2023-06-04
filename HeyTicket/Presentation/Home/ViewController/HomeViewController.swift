@@ -14,7 +14,7 @@ class HomeViewController: BaseViewController<TabBarHeaderView, BaseView>{
     
     init() {
         super.init(
-            headerView: TabBarHeaderView(leftImage: Image.search, rightImage: Image.alarm),
+            headerView: HomeHeaderView(),
             mainView: BaseView()
         )
     }
