@@ -102,6 +102,10 @@ class HomeRecommendBannerTableViewCell: BaseTableViewCell{
     }
     
     override func initialize() {
+        addRecommendBtnTarget()
+    }
+    
+    private func addRecommendBtnTarget(){
         recommendBtn.rx.tap
             .subscribe{ [weak self] _ in
                 self?.delegate?.willMoveForRecommend()

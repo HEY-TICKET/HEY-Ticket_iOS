@@ -39,6 +39,14 @@ class HomeViewController: BaseViewController<TabBarHeaderView, TableOnlyView>{
     }
 }
 
+extension HomeViewController: RecommendBannerDelegate{
+    func willMoveForRecommend() {
+        //TODO: 유저 미로그인
+        
+        //TODO: 관심정보 설정X
+    }
+}
+
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         1
@@ -52,7 +60,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     private func getRecommendBannerTableViewCell(indexPath: IndexPath) -> BaseTableViewCell{
-        mainView.tableView.dequeueReusableCell(for: indexPath, cellType: HomeRecommendBannerTableViewCell.self)
+        let cell = mainView.tableView.dequeueReusableCell(for: indexPath, cellType: HomeRecommendBannerTableViewCell.self)
+        cell.delegate = self
+        return cell
     }
     
     
