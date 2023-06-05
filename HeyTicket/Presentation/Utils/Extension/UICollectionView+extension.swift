@@ -8,6 +8,13 @@
 import UIKit
 
 extension UICollectionView{
+    
+    final func registers<T: BaseCollectionViewCell>(cellTypes: [T.Type]){
+        cellTypes.forEach{
+            register(cellType: $0)
+        }
+    }
+    
     final func register<T: BaseCollectionViewCell>(cellType: T.Type) {
         register(cellType.self, forCellWithReuseIdentifier: cellType.cellIdentifier)
     }
