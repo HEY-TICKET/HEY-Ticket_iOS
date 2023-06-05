@@ -87,6 +87,4 @@ class SectionTitleWithMoreFlowTableViewCell: SectionTitleTableViewCell{
     @objc private func moreStackViewDidTap(){
         delegate?.willMoveMoreItemViewController()
     }
-    
-    
 }
