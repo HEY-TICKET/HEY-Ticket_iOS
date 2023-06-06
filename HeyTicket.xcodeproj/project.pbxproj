@@ -39,7 +39,6 @@
 		EE6AB9102A262E4F00F18596 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AB90F2A262E4F00F18596 /* BaseViewController.swift */; };
 		EE6AB9142A262E8100F18596 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AB9132A262E8100F18596 /* BaseTableViewCell.swift */; };
 		EE6AB9162A262E8A00F18596 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AB9152A262E8A00F18596 /* BaseCollectionViewCell.swift */; };
-		EE6AB9182A262EAC00F18596 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AB9172A262EAC00F18596 /* Entity.swift */; };
 		EE6AB91A2A262EB100F18596 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AB9192A262EB100F18596 /* UseCase.swift */; };
 		EE6AB91C2A262EBA00F18596 /* RepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AB91B2A262EBA00F18596 /* RepositoryInterface.swift */; };
 		EE6AB91E2A262EC400F18596 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AB91D2A262EC400F18596 /* Repository.swift */; };
@@ -63,6 +62,9 @@
 		EEEFAD6E2A2D819500A2B140 /* RankingTicketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEFAD6D2A2D819500A2B140 /* RankingTicketCollectionViewCell.swift */; };
 		EEEFAD742A2DAC7F00A2B140 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEFAD732A2DAC7F00A2B140 /* BaseViewModel.swift */; };
 		EEEFAD762A2DCC9C00A2B140 /* RecommendTicketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEFAD752A2DCC9C00A2B140 /* RecommendTicketCollectionViewCell.swift */; };
+		EEEFAD8A2A2F336900A2B140 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEFAD892A2F336900A2B140 /* Ticket.swift */; };
+		EEEFAD8C2A2F343600A2B140 /* TicketResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEFAD8B2A2F343600A2B140 /* TicketResponseModel.swift */; };
+		EEEFAD8E2A2F3CBB00A2B140 /* TicketMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEFAD8D2A2F3CBB00A2B140 /* TicketMapping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,7 +126,6 @@
 		EE6AB90F2A262E4F00F18596 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EE6AB9132A262E8100F18596 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		EE6AB9152A262E8A00F18596 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
-		EE6AB9172A262EAC00F18596 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		EE6AB9192A262EB100F18596 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		EE6AB91B2A262EBA00F18596 /* RepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryInterface.swift; sourceTree = "<group>"; };
 		EE6AB91D2A262EC400F18596 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -144,6 +145,9 @@
 		EEEFAD6D2A2D819500A2B140 /* RankingTicketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTicketCollectionViewCell.swift; sourceTree = "<group>"; };
 		EEEFAD732A2DAC7F00A2B140 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		EEEFAD752A2DCC9C00A2B140 /* RecommendTicketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTicketCollectionViewCell.swift; sourceTree = "<group>"; };
+		EEEFAD892A2F336900A2B140 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		EEEFAD8B2A2F343600A2B140 /* TicketResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketResponseModel.swift; sourceTree = "<group>"; };
+		EEEFAD8D2A2F3CBB00A2B140 /* TicketMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketMapping.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				EE6AB9212A262ECF00F18596 /* Model.swift */,
+				EEEFAD8B2A2F343600A2B140 /* TicketResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 		EE6AB9052A262C8800F18596 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EEEFAD8D2A2F3CBB00A2B140 /* TicketMapping.swift */,
 				EE6AB90E2A262E0800F18596 /* Base */,
 				EE3C4D132A2C91590049F737 /* Extension */,
 				EE3C4D252A2C94210049F737 /* Category */,
@@ -369,7 +375,7 @@
 		EE6AB90C2A262CE300F18596 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				EE6AB9172A262EAC00F18596 /* Entity.swift */,
+				EEEFAD892A2F336900A2B140 /* Ticket.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -586,6 +592,7 @@
 				EE3C4D082A2C8D3D0049F737 /* HomeViewModelInterface.swift in Sources */,
 				EE6AB91C2A262EBA00F18596 /* RepositoryInterface.swift in Sources */,
 				EE3C4CF12A2B65D90049F737 /* MyPageCoordinator.swift in Sources */,
+				EEEFAD8E2A2F3CBB00A2B140 /* TicketMapping.swift in Sources */,
 				EE9EC05A2A28B50100C77D16 /* TabBarViewController.swift in Sources */,
 				EE6AB91A2A262EB100F18596 /* UseCase.swift in Sources */,
 				EE3C4CE12A2B3DB30049F737 /* TabBarDIContainer.swift in Sources */,
@@ -599,7 +606,6 @@
 				EE9EC0582A28B4C700C77D16 /* CategoryViewController.swift in Sources */,
 				EE6AB9222A262ECF00F18596 /* Model.swift in Sources */,
 				EE47A8AF2A24C2D000FAAC06 /* SceneDelegate.swift in Sources */,
-				EE6AB9182A262EAC00F18596 /* Entity.swift in Sources */,
 				EE3C4D152A2C91860049F737 /* UITableView+extension.swift in Sources */,
 				EE3C4D172A2C91A50049F737 /* UICollectionView+extension.swift in Sources */,
 				EE3C4D192A2C92840049F737 /* HomeRecommendBannerTableViewCell.swift in Sources */,
@@ -619,8 +625,10 @@
 				EE3C4D1D2A2C93010049F737 /* CategorySelectTableViewCell.swift in Sources */,
 				EE3C4CDD2A2B3D6D0049F737 /* DIContainer.swift in Sources */,
 				EE3C4D122A2C911C0049F737 /* CellReuseable.swift in Sources */,
+				EEEFAD8C2A2F343600A2B140 /* TicketResponseModel.swift in Sources */,
 				EEEFAD742A2DAC7F00A2B140 /* BaseViewModel.swift in Sources */,
 				EE3C4D292A2CA1200049F737 /* UIStackView+extension.swift in Sources */,
+				EEEFAD8A2A2F336900A2B140 /* Ticket.swift in Sources */,
 				EE3C4CEF2A2B64B60049F737 /* CategoryCoordinator.swift in Sources */,
 				EE6AB9162A262E8A00F18596 /* BaseCollectionViewCell.swift in Sources */,
 			);
