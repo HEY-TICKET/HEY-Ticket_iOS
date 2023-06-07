@@ -8,10 +8,6 @@
 import UIKit
 import HeyTicketKit
 
-struct Show{
-    let title: String
-}
-
 class HomeTicketCollectionViewCell: BaseCollectionViewCell{
     
     var posterImageHeight: CGFloat = TicketListView.defaultViewInfo.imageHeight
@@ -97,7 +93,7 @@ class HomeTicketCollectionViewCell: BaseCollectionViewCell{
         }
     }
     
-    func bindingData(_ data: Show){
+    func bindingData(_ data: Ticket){
         showTitleLabel.text = data.title
     }
 }

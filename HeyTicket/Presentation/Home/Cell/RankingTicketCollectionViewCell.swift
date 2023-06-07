@@ -10,7 +10,7 @@ import SnapKit
 import HeyTicketKit
 
 protocol BindingRankingShow{
-    func bindingData(_ data: Show, ranking: Int)
+    func bindingData(_ data: Ticket, ranking: Int)
 }
 
 class RankingTicketCollectionViewCell: HomeTicketCollectionViewCell, BindingRankingShow{
@@ -39,7 +39,7 @@ class RankingTicketCollectionViewCell: HomeTicketCollectionViewCell, BindingRank
         }
     }
     
-    func bindingData(_ data: Show, ranking: Int) {
+    func bindingData(_ data: Ticket, ranking: Int) {
         rankingTag.text = "\(ranking)"
         super.bindingData(data)
     }

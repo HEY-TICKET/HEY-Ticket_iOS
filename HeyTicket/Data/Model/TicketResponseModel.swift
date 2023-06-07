@@ -46,7 +46,7 @@ extension TicketResponseModel{
             poster: URL(string: poster)!,
             story: story,
             genre: TicketGenre(rawValue: genre) ?? TicketGenre.ALL,
-            status: TicketState(rawValue: status) ?? TicketState.upcoming,
+            status: TicketState(rawValue: status) ?? TicketState.UPCOMING,
             openRun: openRun,
             storyUrls: storyUrls.map{ URL(string: $0)! },
             schedule: schedule,
