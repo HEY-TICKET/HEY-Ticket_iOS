@@ -8,6 +8,7 @@
 import Foundation
 
 enum TicketGenre: String, CaseIterable{
+    case ALL
     case THEATER
     case MUSICAL
     case CLASSIC
@@ -17,7 +18,6 @@ enum TicketGenre: String, CaseIterable{
     case POPULAR_DANCE
     case CIRCUS_AND_MAGIC
     case MIXED_GENRE
-    case ALL
 }
 
 enum TicketState: String{
