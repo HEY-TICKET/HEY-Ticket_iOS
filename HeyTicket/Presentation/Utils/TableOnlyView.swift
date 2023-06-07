@@ -5,13 +5,17 @@
 //  Created by 박소윤 on 2023/06/04.
 //
 
-import Foundation
 import UIKit
 import SnapKit
 
 class TableOnlyView: BaseView{
     
-    let tableView = UITableView()
+    let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.showsVerticalScrollIndicator = false
+        tableView.showsHorizontalScrollIndicator = false
+        return tableView
+    }()
     
     override func hierarchy() {
         addSubview(tableView)
