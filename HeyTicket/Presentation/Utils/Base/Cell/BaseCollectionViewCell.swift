@@ -1,5 +1,5 @@
 //
-//  BaseTableViewCell.swift
+//  BaseCollectionViewCell.swift
 //  HeyTicket
 //
 //  Created by 박소윤 on 2023/05/30.
@@ -7,20 +7,19 @@
 
 import Foundation
 import UIKit
-import SnapKit
 
-class BaseTableViewCell: UITableViewCell{
+class BaseCollectionViewCell: UICollectionViewCell, CellReuseable{
     
     var cellIndexPath: IndexPath?{
-        (superview as? UITableView)?.indexPath(for: self)
+        (superview as? UICollectionView)?.indexPath(for: self)
     }
     
     let baseView = UIView()
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: .zero)
         template()
-        self.style()
+        style()
         hierarchy()
         layout()
         initialize()

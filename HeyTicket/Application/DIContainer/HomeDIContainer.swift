@@ -23,7 +23,11 @@ final class HomeDIContainer: DIContainer {
         )
     }
     
+    private func makeHomeViewModel() -> any HomeViewModelInterface{
+        HomeViewModel()
+    }
+    
     func makeHomeViewController() -> HomeViewController {
-        HomeViewController()
+        HomeViewController(viewModel: makeHomeViewModel())
     }
 }

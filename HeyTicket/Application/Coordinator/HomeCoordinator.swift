@@ -26,8 +26,16 @@ final class HomeCoordinator: Coordinator {
         homeViewController.coordinator = self
         navigationController.pushViewController(homeViewController, animated: true)
     }
-
-    func popRequestRegion() {
-        navigationController.popViewController(animated: true)
+    
+    func showLogin(){
+//        navigationController.present(, animated: true)
+    }
+    
+    func showRegisterInterest(){
+//        navigationController.present(<#T##viewControllerToPresent: UIViewController##UIViewController#>, animated: true)
+    }
+    
+    func showMoreItems(){
+//        navigationController.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: true)
     }
 }
