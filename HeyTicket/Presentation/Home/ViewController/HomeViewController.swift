@@ -200,6 +200,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch TicketViewTag(rawValue: collectionView.tag){
+        case .recommendItem:                        return cellOfRecommendTicket(collectionView, indexPath: indexPath)
         case .rankingItem:                          return cellOfTicketWithRanking(collectionView, indexPath: indexPath)
         case .rankingCategory, .newCategory:        return cellOfCategory(collectionView, indexPath: indexPath)
         default:                                    return cellOfTicket(collectionView, indexPath: indexPath)
