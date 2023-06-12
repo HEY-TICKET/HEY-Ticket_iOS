@@ -36,6 +36,6 @@ final class HomeCoordinator: Coordinator {
     }
     
     func showMoreItems(){
-//        navigationController.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: true)
+        navigationController.pushViewController(MoreTicketViewController(), animated: true)
     }
 }
