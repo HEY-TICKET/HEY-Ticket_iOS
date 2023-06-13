@@ -10,7 +10,29 @@ import HeyTicketKit
 
 class HomeTicketCollectionViewCell: BaseCollectionViewCell{
     
+    static let TestData = Ticket(id: "1",
+                                 title: "파우스트",
+                                 startDate: "2023-06-12",
+                                 endDate: "2023-06-08",
+                                 theater: "용산구 블루 스퀘어",
+                                 cast: "",
+                                 crew: "",
+                                 runtime: "",
+                                 age: "",
+                                 company: "",
+                                 price: "",
+                                 poster: URL(filePath: ""),
+                                 story: "",
+                                 genre: .ALL,
+                                 status: .ONGOING,
+                                 openRun: true,
+                                 storyUrls: [],
+                                 schedule: "",
+                                 views: 2)
+    
     var posterImageHeight: CGFloat = TicketListView.defaultViewInfo.imageHeight
+    
+    private var ticket: Ticket!
     
     //포스터 이미지
     private let posterImageView: UIImageView = {
@@ -29,7 +51,6 @@ class HomeTicketCollectionViewCell: BaseCollectionViewCell{
     }()
     private let placeLabel: UILabel = {
        let label = UILabel()
-        label.text = "용산구・블루 스퀘어"
         label.textColor = Color.grey500
         label.font = Typo.font(type: .Medium, size: 12)
         return label
@@ -50,16 +71,14 @@ class HomeTicketCollectionViewCell: BaseCollectionViewCell{
         stackView.axis = .horizontal
         return stackView
     }()
-    private let remainDateLabel: UILabel = {
+    private let dateLabel: UILabel = {
         let label = UILabel()
-        label.text = "D-14"
         label.textColor = Color.blueTagText
         label.font = Typo.font(type: .SemiBold, size: 12)
         return label
     }()
-    private let dateInfoLabel: UILabel = {
+    private let calendarLabel: UILabel = {
         let label = UILabel()
-        label.text = "3월 31일(금) 시작"
         label.textAlignment = .left
         label.textColor = Color.grey500
         label.font = Typo.font(type: .Medium, size: 12)
@@ -74,7 +93,7 @@ class HomeTicketCollectionViewCell: BaseCollectionViewCell{
             .addArrangedSubviews([placeLabel, showTitleLabel])
         
         dateStackView
-            .addArrangedSubviews([remainDateLabel, dateInfoLabel])
+            .addArrangedSubviews([dateLabel, calendarLabel])
     }
     
     override func layout() {
@@ -94,6 +113,48 @@ class HomeTicketCollectionViewCell: BaseCollectionViewCell{
     }
     
     func bindingData(_ data: Ticket){
-        showTitleLabel.text = data.title
+        ticket = data
+        setData()
+        switch data.status{
+        case .UPCOMING:     setUpcomingTicketAttributes()
+        case .ONGOING:      setOngoingTicketAttributes()
+        default:            return
+        }
+    }
+    
+    private func setData(){
+        showTitleLabel.text = ticket.title
+        placeLabel.text = ticket.theater
+        dateLabel.text = ticket.dateBinding
+        calendarLabel.text = ticket.calendarBinding
+//        posterImageView.kf.setImage(<#T##CIImage#>)
+    }
+    
+    private func setUpcomingTicketAttributes(){
+        dateLabel.textColor = Color.blueTagText
+    }
+    
+    private func setOngoingTicketAttributes(){
+        dateLabel.textColor = Color.greenTagText
+    }
+}
+
+
+private extension Ticket{
+    
+    var dateBinding: String?{
+        switch status{
+        case .UPCOMING:     return "D-\(HeyTicketDateFormatter.remainDate(start: startDate))"
+        case .ONGOING:      return "공연 중"
+        default:            return nil
+        }
+    }
+    
+    var calendarBinding: String?{
+        switch status{
+        case .UPCOMING:     return "\(HeyTicketDateFormatter.monthDateDay(data: startDate)) 시작"
+        case .ONGOING:      return "\(HeyTicketDateFormatter.monthDateDay(data: endDate)) 종료"
+        default:            return nil
+        }
     }
 }
