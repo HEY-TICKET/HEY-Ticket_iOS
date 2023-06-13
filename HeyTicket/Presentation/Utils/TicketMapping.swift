@@ -9,8 +9,10 @@ import Foundation
 
 struct TicketMapping{
     
+    static let genres: [TicketGenre] = TicketGenre.allCases
+    
     static func genre(index: Int) -> String {
-        let genre = TicketGenre.allCases[index]
+        let genre = TicketMapping.genres[index]
         return TicketMapping.genreMapping[genre]!
     }
     
