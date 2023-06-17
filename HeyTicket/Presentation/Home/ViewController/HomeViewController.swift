@@ -78,7 +78,7 @@ extension HomeViewController: RecommendBannerDelegate, MoreSectionItemDelegate{
     }
     
     func willMoveMoreItemViewController() {
-        coordinator?.showMoreItems()
+        coordinator?.showMoreItems(isNew: true)
     }
 }
 
@@ -183,7 +183,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         cell.sectionType = ticketListType(of: indexPath)
         cell.collectionView.delegate = self
         cell.collectionView.dataSource = self
-        cell.collectionView.tag = tag.rawValue //collectionView의 경우 tableView section과 별개로 처리되므로, tag 활용
+        cell.collectionView.tag = tag.rawValue
         return cell
     }
     
@@ -230,7 +230,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     private func cellOfTicket(_ collectionView: UICollectionView, indexPath: IndexPath) -> BaseCollectionViewCell{
         let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: HomeTicketCollectionViewCell.self)
-//        cell.bindingData(Ticket(title: "영웅"))
+        cell.bindingData(HomeTicketCollectionViewCell.TestData)
         return cell
     }
     

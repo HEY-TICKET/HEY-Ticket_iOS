@@ -9,7 +9,7 @@ import Foundation
 
 class HomeViewModel: HomeViewModelInterface{
     
-    var willRecommendShow: Bool = true
+    var willRecommendShow: Bool = false
     var ticketRankings: [Ticket] = [Ticket]()
     var newTickets: [Ticket] = [Ticket]()
     

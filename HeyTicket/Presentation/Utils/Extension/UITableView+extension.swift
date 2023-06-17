@@ -13,6 +13,12 @@ extension UITableView{
         register(cellType.self, forCellReuseIdentifier: cellType.cellIdentifier)
     }
     
+    final func registers<T: BaseTableViewCell>(cellTypes: [T.Type]){
+        cellTypes.forEach{
+            register(cellType: $0)
+        }
+    }
+    
     final func dequeueReusableCell<T: BaseTableViewCell>(for indexPath: IndexPath, cellType: T.Type = T.self) -> T {
         guard let cell = dequeueReusableCell(withIdentifier: cellType.cellIdentifier, for: indexPath) as? T else {
           fatalError(

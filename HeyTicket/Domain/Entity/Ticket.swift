@@ -20,6 +20,7 @@ enum TicketGenre: String, CaseIterable{
     case MIXED_GENRE
 }
 
+@frozen
 enum TicketState: String{
     case UPCOMING
     case ONGOING
@@ -47,3 +48,4 @@ struct Ticket{
     let schedule: String
     let views: Int
 }
+
