@@ -9,13 +9,15 @@ import Foundation
 import HeyTicketKit
 import UIKit
 
-protocol FilteringDelegate: AnyObject{
-    
-}
-
 class MoreTicketViewController: BaseViewController<NavigationHeaderView.TitleType, MoreTicketView>{
     
-    init(){ //TODO: Title 설정
+    private let sortingModalVC: SortingModalViewController
+    private let sortCases: [SortingState]
+    
+    init(isNew: Bool){ //TODO: Title 설정
+        let sortType: SortingModalViewController.SortType = isNew ? .new : .default
+        sortingModalVC = SortingModalViewController(type: sortType)
+        self.sortCases = sortType.sortCases
         super.init(headerView: NavigationHeaderView.generate(title: "테스트"), mainView: MoreTicketView())
     }
     
@@ -26,6 +28,15 @@ class MoreTicketViewController: BaseViewController<NavigationHeaderView.TitleTyp
     override func initialize() {
         setTableViewDelegate()
         setGestureRecognizer()
+    }
+    
+    override func bind() {
+        sortingModalVC.filterRelay
+            .subscribe{ [weak self] in
+                if let title = self?.sortCases[$0].rawValue {
+                    self?.mainView.filteringSection.title = title
+                }
+            }.disposed(by: disposeBag)
     }
     
     private func setTableViewDelegate(){
@@ -39,9 +50,7 @@ class MoreTicketViewController: BaseViewController<NavigationHeaderView.TitleTyp
     }
     
     @objc private func showFilteringBottomSheet(){
-        //TODO: 필터링 바텀시트 보여주기
-//        let modal = BaseModalViewController(detent: 280, mainView: BaseView())
-//        present(modal, animated: true)
+        present(sortingModalVC, animated: true)
     }
 }
  

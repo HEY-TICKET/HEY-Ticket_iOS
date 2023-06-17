@@ -40,6 +40,9 @@
 		EE47A8AD2A24C2D000FAAC06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE47A8AC2A24C2D000FAAC06 /* AppDelegate.swift */; };
 		EE47A8AF2A24C2D000FAAC06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE47A8AE2A24C2D000FAAC06 /* SceneDelegate.swift */; };
 		EE47A8B92A24C2D100FAAC06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE47A8B72A24C2D100FAAC06 /* LaunchScreen.storyboard */; };
+		EE5CEECA2A39C2CF00E1907E /* SortingModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CEEC92A39C2CF00E1907E /* SortingModalViewController.swift */; };
+		EE5CEECE2A39C67800E1907E /* FilteringModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CEECD2A39C67800E1907E /* FilteringModalView.swift */; };
+		EE5CEED02A39C69900E1907E /* SortingModalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CEECF2A39C69900E1907E /* SortingModalTableViewCell.swift */; };
 		EE5E1B4A2A341AB300C9438F /* Tag+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5E1B492A341AB300C9438F /* Tag+extension.swift */; };
 		EE6AB9102A262E4F00F18596 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AB90F2A262E4F00F18596 /* BaseViewController.swift */; };
 		EE6AB9142A262E8100F18596 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AB9132A262E8100F18596 /* BaseTableViewCell.swift */; };
@@ -131,6 +134,9 @@
 		EE47A8AE2A24C2D000FAAC06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE47A8B82A24C2D100FAAC06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE47A8BA2A24C2D100FAAC06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE5CEEC92A39C2CF00E1907E /* SortingModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingModalViewController.swift; sourceTree = "<group>"; };
+		EE5CEECD2A39C67800E1907E /* FilteringModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringModalView.swift; sourceTree = "<group>"; };
+		EE5CEECF2A39C69900E1907E /* SortingModalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingModalTableViewCell.swift; sourceTree = "<group>"; };
 		EE5E1B492A341AB300C9438F /* Tag+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+extension.swift"; sourceTree = "<group>"; };
 		EE6AB90F2A262E4F00F18596 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EE6AB9132A262E8100F18596 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
@@ -173,6 +179,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE06AED82A3DB67400DEF51C /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				EE5CEEC92A39C2CF00E1907E /* SortingModalViewController.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		EE06AED92A3DB67A00DEF51C /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				EE5CEECD2A39C67800E1907E /* FilteringModalView.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
 		EE1C47D52A31B3FA008585D1 /* Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				EE1C47D72A31B416008585D1 /* MoreTicketTableViewCell.swift */,
+				EE5CEECF2A39C69900E1907E /* SortingModalTableViewCell.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -221,6 +244,7 @@
 		EE3C4CFC2A2C8C130049F737 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EE06AED92A3DB67A00DEF51C /* Modal */,
 				EE3C4D002A2C8D0A0049F737 /* HomeHeaderView.swift */,
 				EE1C47DF2A31B50A008585D1 /* MoreTicketView.swift */,
 			);
@@ -240,6 +264,7 @@
 		EE3C4CFE2A2C8C210049F737 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				EE06AED82A3DB67400DEF51C /* Modal */,
 				EE9EC0532A28B4C700C77D16 /* HomeViewController.swift */,
 				EE1C47D92A31B44D008585D1 /* MoreTicketViewController.swift */,
 			);
@@ -624,6 +649,7 @@
 				EE9EC05A2A28B50100C77D16 /* TabBarViewController.swift in Sources */,
 				EE1C47DC2A31B45F008585D1 /* MoreTicketViewModel.swift in Sources */,
 				EE6AB91A2A262EB100F18596 /* UseCase.swift in Sources */,
+				EE5CEED02A39C69900E1907E /* SortingModalTableViewCell.swift in Sources */,
 				EE3C4CE12A2B3DB30049F737 /* TabBarDIContainer.swift in Sources */,
 				EE3C4D1F2A2C93C30049F737 /* TicketListTableViewCell.swift in Sources */,
 				EE3C4CED2A2B63EB0049F737 /* HomeCoordinator.swift in Sources */,
@@ -631,6 +657,7 @@
 				EE9EC0562A28B4C700C77D16 /* HomeViewController.swift in Sources */,
 				EE9EC0512A28B4B000C77D16 /* TabBarItem.swift in Sources */,
 				EE3C4D062A2C8D270049F737 /* HomeViewModel.swift in Sources */,
+				EE5CEECE2A39C67800E1907E /* FilteringModalView.swift in Sources */,
 				EE3C4D242A2C93ED0049F737 /* CategoryCollectionViewCell.swift in Sources */,
 				EE9EC0582A28B4C700C77D16 /* CategoryViewController.swift in Sources */,
 				EE6AB9222A262ECF00F18596 /* Model.swift in Sources */,
@@ -649,6 +676,7 @@
 				EEEFAD6E2A2D819500A2B140 /* RankingTicketCollectionViewCell.swift in Sources */,
 				EE5E1B4A2A341AB300C9438F /* Tag+extension.swift in Sources */,
 				EE3C4CEB2A2B62550049F737 /* CategoryDIContainer.swift in Sources */,
+				EE5CEECA2A39C2CF00E1907E /* SortingModalViewController.swift in Sources */,
 				EE3C4CE32A2B3DC20049F737 /* TabBarCoordinator.swift in Sources */,
 				EE1C47D02A3090FA008585D1 /* HeyTicketDateFormatter.swift in Sources */,
 				EE6AB9202A262ECA00F18596 /* Service.swift in Sources */,
