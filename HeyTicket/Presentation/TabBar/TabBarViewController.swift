@@ -23,7 +23,7 @@ class TabBarController: UITabBarController{
     
     private func setTabBarAppearance() {
         UITabBar.appearance().backgroundColor = .white
-        UITabBar.appearance().tintColor = Color.tabBarItem
+        UITabBar.appearance().tintColor = Color.basicGrey100
         UITabBar.appearance().unselectedItemTintColor = Color.grey400
         
         let fontAttributes = [NSAttributedString.Key.font: Typo.font(type: .SemiBold, size: 10)]
