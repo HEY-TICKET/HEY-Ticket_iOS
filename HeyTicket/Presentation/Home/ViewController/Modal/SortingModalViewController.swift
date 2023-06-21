@@ -57,6 +57,7 @@ class SortingModalViewController: BaseModalViewController<TableOnlyView, Sorting
         mainView.tableView.delegate = self
         mainView.tableView.dataSource = self
         mainView.tableView.separatorStyle = .none
+        mainView.tableView.isScrollEnabled = false
     }
     
     private func registerTableViewCell(){
