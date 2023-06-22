@@ -35,7 +35,7 @@ class LoginViewController: BaseViewController<NavigationHeaderView, LoginView>{
             .drive{ [weak self] isValid in
                 self?.mainView.isWarningState = !isValid
                 self?.mainView.ctaButton.isEnabled = isValid
-                self?.mainView.isInformationLabelHidden = isValid
+                self?.mainView.informationLabel.willHidden = isValid
             }.disposed(by: disposeBag)
     }
 }

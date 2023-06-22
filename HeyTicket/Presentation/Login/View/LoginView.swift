@@ -9,88 +9,18 @@ import HeyTicketKit
 import UIKit
 import SnapKit
 
-protocol ShowTextFieldInformation{
-    var isWarningState: Bool { get }
-    var isInformationLabelHidden: Bool { get }
-    var textFieldFrame: TextFieldFrame { get }
-    var informationLabel: UILabel { get }
-    var warningMessage: String? { get }
-    var informationMessage: String? { get }
-    func remakeConstraintsUnderView()
-}
-
-extension ShowTextFieldInformation where Self: BaseView{
-    
-    private var attributes: (message: String?, color: UIColor){
-        isWarningState ? (warningMessage, Color.red) : (informationMessage, Color.grey500)
-    }
-    
-    var informationLabelFont: UIFont{
-        Typo.font(type: .Regular, size: 12)
-    }
-    
-    func setInformationLabelLayout(){
-        if isInformationLabelHidden {
-            hiddenLabel()
-        } else {
-            showLabel()
-        }
-    }
-    
-    private func showLabel(){
-        informationLabel.snp.remakeConstraints{
-            $0.top.equalTo(textFieldFrame.snp.bottom).offset(6)
-            $0.leading.equalToSuperview().offset(20)
-        }
-    }
-    
-    func hiddenLabel(){
-        informationLabel.snp.remakeConstraints{
-            $0.bottom.equalTo(informationLabel)
-            $0.leading.equalToSuperview().offset(20)
-        }
-    }
-    
-    private func setTextFieldAndLabelAttributes(){
-        textFieldFrame.isWarningState = isWarningState
-        informationLabel.text = attributes.message
-        informationLabel.textColor = attributes.color
-    }
-
-    func checkWarningState(_ oldValue: Bool){
-        if oldValue != isWarningState{
-            setTextFieldAndLabelAttributes()
-        }
-    }
-    
-    func checkInformationLabelHiddenState(_ oldValue: Bool){
-        if oldValue != isInformationLabelHidden{
-            setInformationLabelLayout()
-            remakeConstraintsUnderView()
-        }
-    }
-}
-
-class LoginView: BaseView, ShowTextFieldInformation{
+class LoginView: BaseView, ShowInformationDelegate{
     
     var isWarningState: Bool = false{
         didSet{
-            checkWarningState(oldValue)
+            informationLabel.willWarning = isWarningState
+            textFieldFrame.isWarningState = isWarningState
         }
     }
     
-    var isInformationLabelHidden: Bool = true{
-        didSet{
-            checkInformationLabelHiddenState(oldValue)
-        }
-    }
-    
-    let warningMessage: String? = "이메일 형식에 맞게 입력해 주세요"
-    let informationMessage: String? = nil
-    
-    lazy var informationLabel: UILabel = {
-        let label = UILabel()
-        label.font = informationLabelFont
+    lazy var informationLabel: TextFieldFrame.InformationLabel = {
+        let label = TextFieldFrame.InformationLabel(textField: textFieldFrame, warningMessage: "이메일 형식에 맞게 입력해 주세요")
+        label.delegate = self
         return label
     }()
     
@@ -122,6 +52,7 @@ class LoginView: BaseView, ShowTextFieldInformation{
     }
     
     override func layout() {
+        
         logoLabel.snp.makeConstraints{
             $0.top.equalToSuperview().offset(60)
             $0.centerX.equalToSuperview()
@@ -134,12 +65,12 @@ class LoginView: BaseView, ShowTextFieldInformation{
             $0.bottom.equalToSuperview().inset(80)
             $0.leading.trailing.equalToSuperview().inset(16)
         }
-        remakeConstraintsUnderView()
-        hiddenLabel()
+        
+        informationLabel.initialize()
     }
     
-    func remakeConstraintsUnderView() {
-        let target: UIView = isInformationLabelHidden ? textFieldFrame : informationLabel
+    func remakeConstraintsOfUnderView(state isHidden: Bool) {
+        let target: UIView = isHidden ? textFieldFrame : informationLabel
         ctaButton.snp.remakeConstraints{
             $0.top.equalTo(target.snp.bottom).offset(20)
             $0.leading.trailing.equalToSuperview().inset(16)
