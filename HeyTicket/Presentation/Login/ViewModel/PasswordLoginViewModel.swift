@@ -22,6 +22,9 @@ class PasswordLoginViewModel: BaseViewModel{
     func transform(_ input: Input) -> Output {
         
         let isPasswordValidate = input.password
+            .filter{
+                !$0.isEmpty
+            }
             .map{ password in
                 Regex.evaluate(expression: .password, target: password)
             }.asDriver(onErrorJustReturn: false)
