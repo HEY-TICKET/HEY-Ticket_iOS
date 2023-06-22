@@ -30,9 +30,7 @@ class LoginViewModel: LoginViewModelInterface{
                 !$0.isEmpty
             }
             .map{ email in
-                let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-                let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-                return emailTest.evaluate(with: email)
+                Regex.evaluate(expression: .email, target: email)
             }
             .share()
             .asDriver(onErrorJustReturn: false)
