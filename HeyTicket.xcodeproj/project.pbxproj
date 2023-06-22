@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE06AEEC2A3DE5F700DEF51C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06AEEB2A3DE5F700DEF51C /* LoginViewController.swift */; };
+		EE06AEEE2A3DE5FE00DEF51C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06AEED2A3DE5FE00DEF51C /* LoginViewModel.swift */; };
+		EE06AEF02A3DE60400DEF51C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06AEEF2A3DE60400DEF51C /* LoginView.swift */; };
 		EE1C47D02A3090FA008585D1 /* HeyTicketDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1C47CF2A3090FA008585D1 /* HeyTicketDateFormatter.swift */; };
 		EE1C47D82A31B416008585D1 /* MoreTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1C47D72A31B416008585D1 /* MoreTicketTableViewCell.swift */; };
 		EE1C47DA2A31B44D008585D1 /* MoreTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1C47D92A31B44D008585D1 /* MoreTicketViewController.swift */; };
 		EE1C47DC2A31B45F008585D1 /* MoreTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1C47DB2A31B45F008585D1 /* MoreTicketViewModel.swift */; };
 		EE1C47DE2A31B46A008585D1 /* MoreTicketViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1C47DD2A31B46A008585D1 /* MoreTicketViewModelInterface.swift */; };
 		EE1C47E02A31B50A008585D1 /* MoreTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1C47DF2A31B50A008585D1 /* MoreTicketView.swift */; };
+		EE3827F52A4329D8003042E6 /* PasswordLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3827F42A4329D8003042E6 /* PasswordLoginView.swift */; };
+		EE3827F72A4329E7003042E6 /* PasswordLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3827F62A4329E7003042E6 /* PasswordLoginViewController.swift */; };
+		EE3827F92A4329F1003042E6 /* PasswordLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3827F82A4329F1003042E6 /* PasswordLoginViewModel.swift */; };
+		EE3827FB2A433C03003042E6 /* LoginDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3827FA2A433C03003042E6 /* LoginDIContainer.swift */; };
+		EE3827FD2A433C0B003042E6 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3827FC2A433C0B003042E6 /* LoginCoordinator.swift */; };
+		EE3828152A445038003042E6 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3828142A445038003042E6 /* Regex.swift */; };
 		EE3C4CDD2A2B3D6D0049F737 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3C4CDC2A2B3D6D0049F737 /* DIContainer.swift */; };
 		EE3C4CDF2A2B3D760049F737 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3C4CDE2A2B3D760049F737 /* Coordinator.swift */; };
 		EE3C4CE12A2B3DB30049F737 /* TabBarDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3C4CE02A2B3DB30049F737 /* TabBarDIContainer.swift */; };
@@ -41,7 +50,7 @@
 		EE47A8AF2A24C2D000FAAC06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE47A8AE2A24C2D000FAAC06 /* SceneDelegate.swift */; };
 		EE47A8B92A24C2D100FAAC06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE47A8B72A24C2D100FAAC06 /* LaunchScreen.storyboard */; };
 		EE5CEECA2A39C2CF00E1907E /* SortingModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CEEC92A39C2CF00E1907E /* SortingModalViewController.swift */; };
-		EE5CEECE2A39C67800E1907E /* FilteringModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CEECD2A39C67800E1907E /* FilteringModalView.swift */; };
+		EE5CEECE2A39C67800E1907E /* SortingModalBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CEECD2A39C67800E1907E /* SortingModalBottomView.swift */; };
 		EE5CEED02A39C69900E1907E /* SortingModalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CEECF2A39C69900E1907E /* SortingModalTableViewCell.swift */; };
 		EE5E1B4A2A341AB300C9438F /* Tag+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5E1B492A341AB300C9438F /* Tag+extension.swift */; };
 		EE6AB9102A262E4F00F18596 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AB90F2A262E4F00F18596 /* BaseViewController.swift */; };
@@ -99,12 +108,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EE06AEEB2A3DE5F700DEF51C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EE06AEED2A3DE5FE00DEF51C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EE06AEEF2A3DE60400DEF51C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EE1C47CF2A3090FA008585D1 /* HeyTicketDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeyTicketDateFormatter.swift; sourceTree = "<group>"; };
 		EE1C47D72A31B416008585D1 /* MoreTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTicketTableViewCell.swift; sourceTree = "<group>"; };
 		EE1C47D92A31B44D008585D1 /* MoreTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTicketViewController.swift; sourceTree = "<group>"; };
 		EE1C47DB2A31B45F008585D1 /* MoreTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTicketViewModel.swift; sourceTree = "<group>"; };
 		EE1C47DD2A31B46A008585D1 /* MoreTicketViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTicketViewModelInterface.swift; sourceTree = "<group>"; };
 		EE1C47DF2A31B50A008585D1 /* MoreTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTicketView.swift; sourceTree = "<group>"; };
+		EE3827F42A4329D8003042E6 /* PasswordLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLoginView.swift; sourceTree = "<group>"; };
+		EE3827F62A4329E7003042E6 /* PasswordLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLoginViewController.swift; sourceTree = "<group>"; };
+		EE3827F82A4329F1003042E6 /* PasswordLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLoginViewModel.swift; sourceTree = "<group>"; };
+		EE3827FA2A433C03003042E6 /* LoginDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDIContainer.swift; sourceTree = "<group>"; };
+		EE3827FC2A433C0B003042E6 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		EE3828142A445038003042E6 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		EE3C4CDC2A2B3D6D0049F737 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		EE3C4CDE2A2B3D760049F737 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		EE3C4CE02A2B3DB30049F737 /* TabBarDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDIContainer.swift; sourceTree = "<group>"; };
@@ -135,7 +153,7 @@
 		EE47A8B82A24C2D100FAAC06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE47A8BA2A24C2D100FAAC06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE5CEEC92A39C2CF00E1907E /* SortingModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingModalViewController.swift; sourceTree = "<group>"; };
-		EE5CEECD2A39C67800E1907E /* FilteringModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringModalView.swift; sourceTree = "<group>"; };
+		EE5CEECD2A39C67800E1907E /* SortingModalBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingModalBottomView.swift; sourceTree = "<group>"; };
 		EE5CEECF2A39C69900E1907E /* SortingModalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingModalTableViewCell.swift; sourceTree = "<group>"; };
 		EE5E1B492A341AB300C9438F /* Tag+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+extension.swift"; sourceTree = "<group>"; };
 		EE6AB90F2A262E4F00F18596 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -190,9 +208,46 @@
 		EE06AED92A3DB67A00DEF51C /* Modal */ = {
 			isa = PBXGroup;
 			children = (
-				EE5CEECD2A39C67800E1907E /* FilteringModalView.swift */,
+				EE5CEECD2A39C67800E1907E /* SortingModalBottomView.swift */,
 			);
 			path = Modal;
+			sourceTree = "<group>";
+		};
+		EE06AEE72A3DE5BC00DEF51C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EE06AEEA2A3DE5EF00DEF51C /* View */,
+				EE06AEE82A3DE5DB00DEF51C /* ViewController */,
+				EE06AEE92A3DE5E000DEF51C /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EE06AEE82A3DE5DB00DEF51C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EE06AEEB2A3DE5F700DEF51C /* LoginViewController.swift */,
+				EE3827F62A4329E7003042E6 /* PasswordLoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EE06AEE92A3DE5E000DEF51C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE06AEED2A3DE5FE00DEF51C /* LoginViewModel.swift */,
+				EE3827F82A4329F1003042E6 /* PasswordLoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EE06AEEA2A3DE5EF00DEF51C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE06AEEF2A3DE60400DEF51C /* LoginView.swift */,
+				EE3827F42A4329D8003042E6 /* PasswordLoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EE1C47D52A31B3FA008585D1 /* Tab */ = {
@@ -225,6 +280,7 @@
 				EE3C4CE62A2B62450049F737 /* HomeDIContainer.swift */,
 				EE3C4CEA2A2B62550049F737 /* CategoryDIContainer.swift */,
 				EE3C4CE82A2B624D0049F737 /* MyPageDIContainer.swift */,
+				EE3827FA2A433C03003042E6 /* LoginDIContainer.swift */,
 			);
 			path = DIContainer;
 			sourceTree = "<group>";
@@ -237,6 +293,7 @@
 				EE3C4CEC2A2B63EB0049F737 /* HomeCoordinator.swift */,
 				EE3C4CEE2A2B64B60049F737 /* CategoryCoordinator.swift */,
 				EE3C4CF02A2B65D90049F737 /* MyPageCoordinator.swift */,
+				EE3827FC2A433C0B003042E6 /* LoginCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -386,6 +443,7 @@
 		EE6AB9022A262C7300F18596 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				EE06AEE72A3DE5BC00DEF51C /* Login */,
 				EE6AB9052A262C8800F18596 /* Utils */,
 				EE9EC04A2A28B43200C77D16 /* TabBar */,
 				EEEA35602A28BB2B003431B5 /* Home */,
@@ -401,6 +459,7 @@
 				EEEFAD8D2A2F3CBB00A2B140 /* TicketMapping.swift */,
 				EE1C47CF2A3090FA008585D1 /* HeyTicketDateFormatter.swift */,
 				EE3C4D0E2A2C90760049F737 /* TableOnlyView.swift */,
+				EE3828142A445038003042E6 /* Regex.swift */,
 				EE6AB90E2A262E0800F18596 /* Base */,
 				EE3C4D132A2C91590049F737 /* Extension */,
 				EE3C4D252A2C94210049F737 /* Category */,
@@ -640,6 +699,7 @@
 				EEEFAD762A2DCC9C00A2B140 /* RecommendTicketCollectionViewCell.swift in Sources */,
 				EE3C4D222A2C93DD0049F737 /* HomeTicketCollectionViewCell.swift in Sources */,
 				EE9EC0572A28B4C700C77D16 /* MyPageViewController.swift in Sources */,
+				EE3827F92A4329F1003042E6 /* PasswordLoginViewModel.swift in Sources */,
 				EE47A8AD2A24C2D000FAAC06 /* AppDelegate.swift in Sources */,
 				EE1C47DE2A31B46A008585D1 /* MoreTicketViewModelInterface.swift in Sources */,
 				EE3C4D082A2C8D3D0049F737 /* HomeViewModelInterface.swift in Sources */,
@@ -657,7 +717,9 @@
 				EE9EC0562A28B4C700C77D16 /* HomeViewController.swift in Sources */,
 				EE9EC0512A28B4B000C77D16 /* TabBarItem.swift in Sources */,
 				EE3C4D062A2C8D270049F737 /* HomeViewModel.swift in Sources */,
-				EE5CEECE2A39C67800E1907E /* FilteringModalView.swift in Sources */,
+				EE06AEEE2A3DE5FE00DEF51C /* LoginViewModel.swift in Sources */,
+				EE3827F72A4329E7003042E6 /* PasswordLoginViewController.swift in Sources */,
+				EE5CEECE2A39C67800E1907E /* SortingModalBottomView.swift in Sources */,
 				EE3C4D242A2C93ED0049F737 /* CategoryCollectionViewCell.swift in Sources */,
 				EE9EC0582A28B4C700C77D16 /* CategoryViewController.swift in Sources */,
 				EE6AB9222A262ECF00F18596 /* Model.swift in Sources */,
@@ -680,8 +742,12 @@
 				EE3C4CE32A2B3DC20049F737 /* TabBarCoordinator.swift in Sources */,
 				EE1C47D02A3090FA008585D1 /* HeyTicketDateFormatter.swift in Sources */,
 				EE6AB9202A262ECA00F18596 /* Service.swift in Sources */,
+				EE3827FD2A433C0B003042E6 /* LoginCoordinator.swift in Sources */,
+				EE06AEEC2A3DE5F700DEF51C /* LoginViewController.swift in Sources */,
 				EE3C4CE72A2B62450049F737 /* HomeDIContainer.swift in Sources */,
+				EE3827FB2A433C03003042E6 /* LoginDIContainer.swift in Sources */,
 				EE3C4D012A2C8D0A0049F737 /* HomeHeaderView.swift in Sources */,
+				EE3827F52A4329D8003042E6 /* PasswordLoginView.swift in Sources */,
 				EE3C4D1D2A2C93010049F737 /* CategorySelectTableViewCell.swift in Sources */,
 				EE3C4CDD2A2B3D6D0049F737 /* DIContainer.swift in Sources */,
 				EE3C4D122A2C911C0049F737 /* CellReuseable.swift in Sources */,
@@ -689,6 +755,8 @@
 				EEEFAD8C2A2F343600A2B140 /* TicketResponseModel.swift in Sources */,
 				EEEFAD742A2DAC7F00A2B140 /* BaseViewModel.swift in Sources */,
 				EEEFAD8A2A2F336900A2B140 /* Ticket.swift in Sources */,
+				EE3828152A445038003042E6 /* Regex.swift in Sources */,
+				EE06AEF02A3DE60400DEF51C /* LoginView.swift in Sources */,
 				EE3C4CEF2A2B64B60049F737 /* CategoryCoordinator.swift in Sources */,
 				EE6AB9162A262E8A00F18596 /* BaseCollectionViewCell.swift in Sources */,
 			);
