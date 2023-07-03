@@ -14,7 +14,7 @@ class LoginView: BaseView, ShowInformationDelegate{
     var isWarningState: Bool = false{
         didSet{
             informationLabel.willWarning = isWarningState
-            textFieldFrame.isWarningState = isWarningState
+            textFieldFrame.isWarning = isWarningState
         }
     }
     
