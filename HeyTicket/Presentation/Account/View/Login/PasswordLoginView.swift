@@ -14,7 +14,7 @@ class PasswordLoginView: BaseView{
     var isWarning: Bool = false{
         didSet{
             informationLabel.willWarning = isWarning
-            textFieldFrame.isWarningState = isWarning
+            textFieldFrame.isWarning = isWarning
         }
     }
     
@@ -44,7 +44,11 @@ class PasswordLoginView: BaseView{
         return textField
     }()
     
-    lazy var ctaButton: CTAButton = CTAButton(title: "로그인", color: .fillDark, configuration: .height48)
+    lazy var ctaButton: CTAButton = {
+        let button = CTAButton(title: "로그인", color: .fillDark, configuration: .height48)
+        button.isEnabled = false
+        return button
+    }()
     
     let passwordFindButton: UILabel = {
        let label = UILabel()

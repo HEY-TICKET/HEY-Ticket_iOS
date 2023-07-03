@@ -31,6 +31,7 @@ class PasswordLoginViewController: BaseViewController<NavigationHeaderView.Title
         output.isPasswordValidate
             .drive{ isValid in
                 self.mainView.isWarning = !isValid
+                self.mainView.ctaButton.isEnabled = isValid
             }.disposed(by: disposeBag)
     }
 }
