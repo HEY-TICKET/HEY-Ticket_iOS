@@ -28,7 +28,8 @@ class HomeHeaderView: TabBarHeaderView{
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func layout(){
+    override func layout(){
+        super.layout()
         addSubview(logoView)
         logoView.snp.makeConstraints{
             $0.leading.equalToSuperview().offset(16)
