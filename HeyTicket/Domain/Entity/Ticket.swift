@@ -7,6 +7,7 @@
 
 import Foundation
 
+@frozen
 enum TicketGenre: String, CaseIterable{
     case ALL
     case THEATER
@@ -18,6 +19,27 @@ enum TicketGenre: String, CaseIterable{
     case POPULAR_DANCE
     case CIRCUS_AND_MAGIC
     case MIXED_GENRE
+}
+
+@frozen
+enum TicketArea: String, CaseIterable{
+    case SEOUL
+    case BUSAN
+    case DAEGU
+    case INCHEON
+    case GWANGJU
+    case DAEJEON
+    case ULSAN
+    case SEJONG
+    case GYEONGGI
+    case GANGWON
+    case CHUNGBUK
+    case CHUNGNAM
+    case JEONBUK
+    case JEONNAM
+    case GYEONGBUK
+    case GYEONGNAM
+    case JEJU
 }
 
 @frozen

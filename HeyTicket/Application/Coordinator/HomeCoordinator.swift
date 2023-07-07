@@ -28,7 +28,9 @@ final class HomeCoordinator: Coordinator {
     }
     
     func showLogin(){
-//        navigationController.present(, animated: true)
+        let viewController = LoginViewController(viewModel: LoginViewModel())
+        viewController.modalPresentationStyle = .fullScreen
+        navigationController.present(viewController, animated: true)
     }
     
     func showRegisterInterest(){

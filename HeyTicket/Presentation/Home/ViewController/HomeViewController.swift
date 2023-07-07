@@ -75,6 +75,7 @@ extension HomeViewController: RecommendBannerDelegate, MoreSectionItemDelegate{
         //TODO: 유저 미로그인
         
         //TODO: 관심정보 설정X
+        coordinator?.showLogin()
     }
     
     func willMoveMoreItemViewController() {

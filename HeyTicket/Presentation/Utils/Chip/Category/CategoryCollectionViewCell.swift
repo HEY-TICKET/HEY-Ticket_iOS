@@ -10,12 +10,12 @@ import HeyTicketKit
 
 //MARK: CategoryAttribute - singleton properties
 
-private protocol CategoryTagAttribute{
+protocol CategoryTagAttribute{
     var configuration: UIButton.Configuration { get }
     var titleAttributes: AttributeContainer { get }
 }
 
-private struct CategoryAttribute{
+struct CategoryAttribute{
     static let selectState: CategoryTagAttribute = CategorySelectedAttribute()
     static let deselectState: CategoryTagAttribute = CategoryDeselectedAttribute()
 }
