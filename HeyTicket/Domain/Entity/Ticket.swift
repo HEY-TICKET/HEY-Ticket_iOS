@@ -8,6 +8,17 @@
 import Foundation
 
 @frozen
+enum TicketMiddleCategory: String, CaseIterable{
+    case CONCERT
+    case MUSICAL
+    case THEATER
+    case CLASSIC
+    case DANCE
+    case KOREAN_TRADITIONAL_MUSIC
+    case CIRCUS_AND_MAGIC
+}
+
+@frozen
 enum TicketGenre: String, CaseIterable{
     case ALL
     case THEATER
