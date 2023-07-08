@@ -39,7 +39,7 @@ class ChipCancelCollectionViewCell: ChipCollectionViewCell{
         }
     }
     
-    static func getSize(title: String, height: CGFloat = 30) -> CGSize{
+    override static func getSize(title: String, height: CGFloat) -> CGSize{
         let width = getWidth(
             title: title,
             selectAttribute: ChipCancelCollectionViewCell.selectAttribute,
