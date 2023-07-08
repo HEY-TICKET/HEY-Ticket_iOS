@@ -32,9 +32,6 @@ class InterestChipCollectionViewCell: ChipCollectionViewCell{
 
 //MARK: CategoryTagAttribute implement
 private extension ChipAttribute{
-    static var cornerAttribute: UIButton.Configuration.CornerStyle{
-        .capsule
-    }
     static var insets: NSDirectionalEdgeInsets{
         NSDirectionalEdgeInsets(top: 10, leading: 12, bottom: 8, trailing: 12)
     }

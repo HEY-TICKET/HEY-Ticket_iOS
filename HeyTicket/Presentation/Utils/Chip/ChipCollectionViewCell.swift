@@ -14,6 +14,12 @@ protocol ChipAttribute{
     var titleAttributes: AttributeContainer { get }
 }
 
+extension ChipAttribute{
+    static var cornerAttribute: UIButton.Configuration.CornerStyle{
+        .capsule
+    }
+}
+
 class ChipCollectionViewCell: BaseCollectionViewCell{
     
     var title: String!
@@ -25,8 +31,8 @@ class ChipCollectionViewCell: BaseCollectionViewCell{
         }
     }
     
-    var selectedAttribute: ChipAttribute!
-    var deselectedAttribute: ChipAttribute!
+    var selectedAttribute: ChipAttribute = ChipSelectedAttribute()
+    var deselectedAttribute: ChipAttribute = ChipDeselectedAttribute()
 
     lazy var titleBtn: UIButton = {
         let button = UIButton()
@@ -52,7 +58,7 @@ class ChipCollectionViewCell: BaseCollectionViewCell{
                 default:            return self.deselectedAttribute
                 }
             }()
-            self.titleBtn.configuration = ChipCollectionViewCell.configuration(title: self.title, attribute: attributes!)
+            self.titleBtn.configuration = ChipCollectionViewCell.configuration(title: self.title, attribute: attributes)
         }
     }
     
@@ -81,4 +87,55 @@ class ChipCollectionViewCell: BaseCollectionViewCell{
         
         return max(deselectWidth, selectWidth)
     }
+    
+    class func getSize(title: String, height: CGFloat) -> CGSize{
+        let width = getWidth(
+            title: title,
+            selectAttribute: ChipSelectedAttribute(),
+            deselectAttribute: ChipDeselectedAttribute()
+        )
+        return CGSize(width: width, height: height)
+    }
+}
+
+private extension ChipAttribute{
+    static var insets: NSDirectionalEdgeInsets{
+        NSDirectionalEdgeInsets(top: 10, leading: 12, bottom: 8, trailing: 12)
+    }
+}
+
+private struct ChipSelectedAttribute: ChipAttribute{
+    let configuration: UIButton.Configuration = {
+        var configuration = UIButton.Configuration.filled()
+        configuration.baseBackgroundColor = .black
+        configuration.cornerStyle = cornerAttribute
+        configuration.contentInsets = insets
+        return configuration
+    }()
+    
+    let titleAttributes: AttributeContainer = {
+        var container = AttributeContainer()
+        container.font = Typo.appleFont(type: .Bold, size: 14)
+        container.foregroundColor = .white
+        return container
+    }()
+}
+
+private struct ChipDeselectedAttribute: ChipAttribute{
+    let configuration: UIButton.Configuration = {
+        var configuration = UIButton.Configuration.bordered()
+        configuration.background.strokeColor = UIColor(r: 242, g: 243, b: 245)
+        configuration.background.strokeWidth = 1
+        configuration.baseBackgroundColor = .white
+        configuration.cornerStyle = cornerAttribute
+        configuration.contentInsets = insets
+        return configuration
+    }()
+    
+    let titleAttributes: AttributeContainer = {
+        var container = AttributeContainer()
+        container.font = Typo.appleFont(type: .Regular, size: 14)
+        container.foregroundColor = UIColor(r: 152, g: 156, b: 161)
+        return container
+    }()
 }
