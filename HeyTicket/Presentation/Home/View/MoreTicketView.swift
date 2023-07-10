@@ -12,7 +12,7 @@ import SnapKit
 class MoreTicketView: BaseView{
     
     let filteringSection: FilteringSection = {
-        let filterSection = FilteringSection()
+        let filterSection = FilteringSection(top: 8)
         filterSection.title = "일간"
         return filterSection
     }()
