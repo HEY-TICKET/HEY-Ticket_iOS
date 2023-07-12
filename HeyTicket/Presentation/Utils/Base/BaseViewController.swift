@@ -51,7 +51,8 @@ class BaseViewController<T: BaseHeaderView, P: BaseView>: UIViewController{
         mainView.snp.makeConstraints{
             $0.top.equalTo(headerView.snp.bottom)
             $0.leading.trailing.equalToSuperview()
-            $0.bottom.equalTo(view.safeAreaLayoutGuide)
+//            $0.bottom.equalTo(view.safeAreaLayoutGuide)
+            $0.bottom.equalToSuperview()
         }
     }
     
