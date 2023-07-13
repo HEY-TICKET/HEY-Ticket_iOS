@@ -88,7 +88,7 @@ class ChipCollectionViewCell: BaseCollectionViewCell{
         return max(deselectWidth, selectWidth)
     }
     
-    class func getSize(title: String, height: CGFloat) -> CGSize{
+    class func getSize(title: String, height: CGFloat = 32) -> CGSize{
         let width = getWidth(
             title: title,
             selectAttribute: ChipSelectedAttribute(),
