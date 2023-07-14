@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0387262A57E88300BF5A97 /* TicketTabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0387252A57E88300BF5A97 /* TicketTabCollectionViewCell.swift */; };
+		EE0387282A57E8A700BF5A97 /* CategoryTicketCountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0387272A57E8A700BF5A97 /* CategoryTicketCountTableViewCell.swift */; };
+		EE03872A2A57F2BD00BF5A97 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0387292A57F2BD00BF5A97 /* CategoryViewModel.swift */; };
+		EE03872E2A58318A00BF5A97 /* CategorySelectedTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE03872D2A58318A00BF5A97 /* CategorySelectedTicketViewController.swift */; };
+		EE0387302A58319B00BF5A97 /* CategorySelectedTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE03872F2A58319B00BF5A97 /* CategorySelectedTicketView.swift */; };
+		EE0387342A5925C800BF5A97 /* FilterChipCancelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0387332A5925C800BF5A97 /* FilterChipCancelCollectionViewCell.swift */; };
+		EE0387362A592A3B00BF5A97 /* CategorySelectedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0387352A592A3B00BF5A97 /* CategorySelectedViewModel.swift */; };
+		EE0387392A59722500BF5A97 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0387382A59722500BF5A97 /* SearchView.swift */; };
+		EE03873B2A59723100BF5A97 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE03873A2A59723100BF5A97 /* SearchViewController.swift */; };
+		EE03873F2A59A0B100BF5A97 /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE03873E2A59A0B100BF5A97 /* SearchResultView.swift */; };
+		EE0387412A59A0BB00BF5A97 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0387402A59A0BB00BF5A97 /* SearchResultViewController.swift */; };
 		EE06AEEC2A3DE5F700DEF51C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06AEEB2A3DE5F700DEF51C /* LoginViewController.swift */; };
 		EE06AEEE2A3DE5FE00DEF51C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06AEED2A3DE5FE00DEF51C /* LoginViewModel.swift */; };
 		EE06AEF02A3DE60400DEF51C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06AEEF2A3DE60400DEF51C /* LoginView.swift */; };
@@ -19,8 +30,6 @@
 		EE3827F52A4329D8003042E6 /* PasswordLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3827F42A4329D8003042E6 /* PasswordLoginView.swift */; };
 		EE3827F72A4329E7003042E6 /* PasswordLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3827F62A4329E7003042E6 /* PasswordLoginViewController.swift */; };
 		EE3827F92A4329F1003042E6 /* PasswordLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3827F82A4329F1003042E6 /* PasswordLoginViewModel.swift */; };
-		EE3827FB2A433C03003042E6 /* LoginDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3827FA2A433C03003042E6 /* LoginDIContainer.swift */; };
-		EE3827FD2A433C0B003042E6 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3827FC2A433C0B003042E6 /* LoginCoordinator.swift */; };
 		EE3828152A445038003042E6 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3828142A445038003042E6 /* Regex.swift */; };
 		EE3828192A447197003042E6 /* EmailCeritificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3828182A447197003042E6 /* EmailCeritificationView.swift */; };
 		EE3828202A4471E4003042E6 /* EmailCertificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE38281F2A4471E4003042E6 /* EmailCertificationViewModel.swift */; };
@@ -74,6 +83,9 @@
 		EE7A96F62A25D32E003E362F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE7A96F52A25D32E003E362F /* SnapKit */; };
 		EE7A96F92A25D3B9003E362F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EE7A96F82A25D3B9003E362F /* RxCocoa */; };
 		EE7A96FB2A25D3B9003E362F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EE7A96FA2A25D3B9003E362F /* RxSwift */; };
+		EE91F0A82A57D2CD00F4A9DB /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE91F0A72A57D2CD00F4A9DB /* CategoryView.swift */; };
+		EE91F0AC2A57DEAA00F4A9DB /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE91F0AB2A57DEAA00F4A9DB /* CategoryHeaderView.swift */; };
+		EE91F0AE2A57DECE00F4A9DB /* SearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE91F0AD2A57DECE00F4A9DB /* SearchHeaderView.swift */; };
 		EE9EC0512A28B4B000C77D16 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9EC04F2A28B4B000C77D16 /* TabBarItem.swift */; };
 		EE9EC0562A28B4C700C77D16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9EC0532A28B4C700C77D16 /* HomeViewController.swift */; };
 		EE9EC0572A28B4C700C77D16 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9EC0542A28B4C700C77D16 /* MyPageViewController.swift */; };
@@ -130,6 +142,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EE0387252A57E88300BF5A97 /* TicketTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTabCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE0387272A57E8A700BF5A97 /* CategoryTicketCountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTicketCountTableViewCell.swift; sourceTree = "<group>"; };
+		EE0387292A57F2BD00BF5A97 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		EE03872D2A58318A00BF5A97 /* CategorySelectedTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectedTicketViewController.swift; sourceTree = "<group>"; };
+		EE03872F2A58319B00BF5A97 /* CategorySelectedTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectedTicketView.swift; sourceTree = "<group>"; };
+		EE0387332A5925C800BF5A97 /* FilterChipCancelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterChipCancelCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE0387352A592A3B00BF5A97 /* CategorySelectedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectedViewModel.swift; sourceTree = "<group>"; };
+		EE0387382A59722500BF5A97 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		EE03873A2A59723100BF5A97 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		EE03873E2A59A0B100BF5A97 /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
+		EE0387402A59A0BB00BF5A97 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		EE06AEEB2A3DE5F700DEF51C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EE06AEED2A3DE5FE00DEF51C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EE06AEEF2A3DE60400DEF51C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -142,8 +165,6 @@
 		EE3827F42A4329D8003042E6 /* PasswordLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLoginView.swift; sourceTree = "<group>"; };
 		EE3827F62A4329E7003042E6 /* PasswordLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLoginViewController.swift; sourceTree = "<group>"; };
 		EE3827F82A4329F1003042E6 /* PasswordLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLoginViewModel.swift; sourceTree = "<group>"; };
-		EE3827FA2A433C03003042E6 /* LoginDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDIContainer.swift; sourceTree = "<group>"; };
-		EE3827FC2A433C0B003042E6 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		EE3828142A445038003042E6 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		EE3828182A447197003042E6 /* EmailCeritificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCeritificationView.swift; sourceTree = "<group>"; };
 		EE38281F2A4471E4003042E6 /* EmailCertificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCertificationViewModel.swift; sourceTree = "<group>"; };
@@ -196,6 +217,9 @@
 		EE6AB91D2A262EC400F18596 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		EE6AB91F2A262ECA00F18596 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		EE6AB9212A262ECF00F18596 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EE91F0A72A57D2CD00F4A9DB /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		EE91F0AB2A57DEAA00F4A9DB /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
+		EE91F0AD2A57DECE00F4A9DB /* SearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeaderView.swift; sourceTree = "<group>"; };
 		EE9EC04F2A28B4B000C77D16 /* TabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		EE9EC0532A28B4C700C77D16 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EE9EC0542A28B4C700C77D16 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +265,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE0387242A57E86E00BF5A97 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE0387252A57E88300BF5A97 /* TicketTabCollectionViewCell.swift */,
+				EE0387272A57E8A700BF5A97 /* CategoryTicketCountTableViewCell.swift */,
+				EE0387332A5925C800BF5A97 /* FilterChipCancelCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EE0387372A5971AF00BF5A97 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EE03873A2A59723100BF5A97 /* SearchViewController.swift */,
+				EE0387402A59A0BB00BF5A97 /* SearchResultViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		EE06AED82A3DB67400DEF51C /* Modal */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,7 +402,6 @@
 				EE3C4CE62A2B62450049F737 /* HomeDIContainer.swift */,
 				EE3C4CEA2A2B62550049F737 /* CategoryDIContainer.swift */,
 				EE3C4CE82A2B624D0049F737 /* MyPageDIContainer.swift */,
-				EE3827FA2A433C03003042E6 /* LoginDIContainer.swift */,
 				EED4A54E2A4806CF0012B6BD /* SignUpDIContainer.swift */,
 			);
 			path = DIContainer;
@@ -373,7 +415,6 @@
 				EE3C4CEC2A2B63EB0049F737 /* HomeCoordinator.swift */,
 				EE3C4CEE2A2B64B60049F737 /* CategoryCoordinator.swift */,
 				EE3C4CF02A2B65D90049F737 /* MyPageCoordinator.swift */,
-				EE3827FC2A433C0B003042E6 /* LoginCoordinator.swift */,
 				EED4A5502A4806DA0012B6BD /* SignUpCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -544,12 +585,13 @@
 		EE6AB9022A262C7300F18596 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				EE06AEE72A3DE5BC00DEF51C /* Account */,
 				EE6AB9052A262C8800F18596 /* Utils */,
 				EE9EC04A2A28B43200C77D16 /* TabBar */,
+				EE06AEE72A3DE5BC00DEF51C /* Account */,
 				EEEA35602A28BB2B003431B5 /* Home */,
 				EEEA35612A28BB32003431B5 /* Category */,
 				EEEA35622A28BB37003431B5 /* MyPage */,
+				EE91F0AF2A57DED700F4A9DB /* Search */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -638,6 +680,53 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE91F0A42A57D1D500F4A9DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE91F0A72A57D2CD00F4A9DB /* CategoryView.swift */,
+				EE91F0AB2A57DEAA00F4A9DB /* CategoryHeaderView.swift */,
+				EE03872F2A58319B00BF5A97 /* CategorySelectedTicketView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE91F0A52A57D1D900F4A9DB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EE9EC0552A28B4C700C77D16 /* CategoryViewController.swift */,
+				EE03872D2A58318A00BF5A97 /* CategorySelectedTicketViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EE91F0A62A57D1DE00F4A9DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE0387292A57F2BD00BF5A97 /* CategoryViewModel.swift */,
+				EE0387352A592A3B00BF5A97 /* CategorySelectedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EE91F0AF2A57DED700F4A9DB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EE91F0B02A57DEF400F4A9DB /* View */,
+				EE0387372A5971AF00BF5A97 /* ViewController */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		EE91F0B02A57DEF400F4A9DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE91F0AD2A57DECE00F4A9DB /* SearchHeaderView.swift */,
+				EE0387382A59722500BF5A97 /* SearchView.swift */,
+				EE03873E2A59A0B100BF5A97 /* SearchResultView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		EE9EC04A2A28B43200C77D16 /* TabBar */ = {
@@ -729,7 +818,10 @@
 		EEEA35612A28BB32003431B5 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				EE9EC0552A28B4C700C77D16 /* CategoryViewController.swift */,
+				EE91F0A42A57D1D500F4A9DB /* View */,
+				EE91F0A52A57D1D900F4A9DB /* ViewController */,
+				EE91F0A62A57D1DE00F4A9DB /* ViewModel */,
+				EE0387242A57E86E00BF5A97 /* Cell */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -843,6 +935,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEEFAD762A2DCC9C00A2B140 /* RecommendTicketCollectionViewCell.swift in Sources */,
+				EE03873F2A59A0B100BF5A97 /* SearchResultView.swift in Sources */,
 				EE3C4D222A2C93DD0049F737 /* HomeTicketCollectionViewCell.swift in Sources */,
 				EE9EC0572A28B4C700C77D16 /* MyPageViewController.swift in Sources */,
 				EE3827F92A4329F1003042E6 /* PasswordLoginViewModel.swift in Sources */,
@@ -852,7 +945,9 @@
 				EE3C4D082A2C8D3D0049F737 /* HomeViewModelInterface.swift in Sources */,
 				EE3828242A447F67003042E6 /* EmailCertificationViewController.swift in Sources */,
 				EE5BFFC22A4C451400C242DC /* InterestKeywordView.swift in Sources */,
+				EE0387342A5925C800BF5A97 /* FilterChipCancelCollectionViewCell.swift in Sources */,
 				EE6AB91C2A262EBA00F18596 /* RepositoryInterface.swift in Sources */,
+				EE91F0A82A57D2CD00F4A9DB /* CategoryView.swift in Sources */,
 				EE3C4CF12A2B65D90049F737 /* MyPageCoordinator.swift in Sources */,
 				EEEFAD8E2A2F3CBB00A2B140 /* TicketMapping.swift in Sources */,
 				EE9EC05A2A28B50100C77D16 /* TabBarViewController.swift in Sources */,
@@ -884,8 +979,10 @@
 				EE3C4D192A2C92840049F737 /* HomeRecommendBannerTableViewCell.swift in Sources */,
 				EE3C4D0F2A2C90760049F737 /* TableOnlyView.swift in Sources */,
 				EEB570852A4F153A005CE363 /* SignUpAgreementTableViewCell.swift in Sources */,
+				EE0387362A592A3B00BF5A97 /* CategorySelectedViewModel.swift in Sources */,
 				EE6AB9102A262E4F00F18596 /* BaseViewController.swift in Sources */,
 				EEC8CF9A2A4D61D7003153E2 /* ChipCancelCollectionViewCell.swift in Sources */,
+				EE0387302A58319B00BF5A97 /* CategorySelectedTicketView.swift in Sources */,
 				EE1C47E02A31B50A008585D1 /* MoreTicketView.swift in Sources */,
 				EE1C47D82A31B416008585D1 /* MoreTicketTableViewCell.swift in Sources */,
 				EE5BFF9D2A4952F800C242DC /* InterestCategoryView.swift in Sources */,
@@ -897,24 +994,29 @@
 				EE3C4D1B2A2C92F20049F737 /* SectionTitleTableViewCell.swift in Sources */,
 				EE6AB91E2A262EC400F18596 /* Repository.swift in Sources */,
 				EEEFAD6E2A2D819500A2B140 /* RankingTicketCollectionViewCell.swift in Sources */,
+				EE91F0AC2A57DEAA00F4A9DB /* CategoryHeaderView.swift in Sources */,
+				EE0387262A57E88300BF5A97 /* TicketTabCollectionViewCell.swift in Sources */,
 				EED4A5312A46B47F0012B6BD /* PasswordSettingViewController.swift in Sources */,
+				EE0387412A59A0BB00BF5A97 /* SearchResultViewController.swift in Sources */,
 				EED4A53E2A46C4010012B6BD /* NewPasswordRegisterViewController.swift in Sources */,
 				EE5E1B4A2A341AB300C9438F /* Tag+extension.swift in Sources */,
 				EE3C4CEB2A2B62550049F737 /* CategoryDIContainer.swift in Sources */,
 				EED4A52C2A46AFB20012B6BD /* PasswordSettingView.swift in Sources */,
+				EE0387392A59722500BF5A97 /* SearchView.swift in Sources */,
 				EE5CEECA2A39C2CF00E1907E /* SortingModalViewController.swift in Sources */,
 				EE3C4CE32A2B3DC20049F737 /* TabBarCoordinator.swift in Sources */,
 				EE1C47D02A3090FA008585D1 /* HeyTicketDateFormatter.swift in Sources */,
 				EE6AB9202A262ECA00F18596 /* Service.swift in Sources */,
-				EE3827FD2A433C0B003042E6 /* LoginCoordinator.swift in Sources */,
 				EE06AEEC2A3DE5F700DEF51C /* LoginViewController.swift in Sources */,
 				EEC8CF9C2A4D68D9003153E2 /* InterestKeywordCancelChipCollectionViewCell.swift in Sources */,
 				EE3C4CE72A2B62450049F737 /* HomeDIContainer.swift in Sources */,
-				EE3827FB2A433C03003042E6 /* LoginDIContainer.swift in Sources */,
 				EE3C4D012A2C8D0A0049F737 /* HomeHeaderView.swift in Sources */,
+				EE0387282A57E8A700BF5A97 /* CategoryTicketCountTableViewCell.swift in Sources */,
 				EE3827F52A4329D8003042E6 /* PasswordLoginView.swift in Sources */,
 				EE3C4D1D2A2C93010049F737 /* CategorySelectTableViewCell.swift in Sources */,
 				EED4A53C2A46BE920012B6BD /* PasswordFindViewController.swift in Sources */,
+				EE03872A2A57F2BD00BF5A97 /* CategoryViewModel.swift in Sources */,
+				EE03873B2A59723100BF5A97 /* SearchViewController.swift in Sources */,
 				EE3C4CDD2A2B3D6D0049F737 /* DIContainer.swift in Sources */,
 				EE3828222A4471EE003042E6 /* PasswordRegisterViewModel.swift in Sources */,
 				EE3C4D122A2C911C0049F737 /* CellReuseable.swift in Sources */,
@@ -925,6 +1027,8 @@
 				EEEFAD8A2A2F336900A2B140 /* Ticket.swift in Sources */,
 				EE3828152A445038003042E6 /* Regex.swift in Sources */,
 				EE06AEF02A3DE60400DEF51C /* LoginView.swift in Sources */,
+				EE91F0AE2A57DECE00F4A9DB /* SearchHeaderView.swift in Sources */,
+				EE03872E2A58318A00BF5A97 /* CategorySelectedTicketViewController.swift in Sources */,
 				EE3C4CEF2A2B64B60049F737 /* CategoryCoordinator.swift in Sources */,
 				EE6AB9162A262E8A00F18596 /* BaseCollectionViewCell.swift in Sources */,
 			);
